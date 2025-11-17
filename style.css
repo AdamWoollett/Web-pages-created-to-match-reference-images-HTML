@@ -1,0 +1,302 @@
+/*Whole Website*/
+@font-face {
+    font-family: Roboto-Black;
+    src: url(Fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url(Fonts/Roboto/Roboto-BlackItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url(Fonts/Roboto/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(Fonts/Roboto/Roboto-Italic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(Fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(Fonts/Roboto/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(Fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-MediumItaclic;
+    src: url(Fonts/Roboto/Roboto-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(Fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url(Fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+*{
+    color: #e6e6e6;
+    font-family: Roboto-Regular, sans-serif;
+}
+body{
+    background-color: #1b1f24;
+}
+/*Navigation*/
+#logo{
+    position:fixed;
+    top:0px;
+    left:25px;
+    z-index:1000;
+}
+nav{
+    position:fixed;
+    top:25px;
+    right:10px;
+    z-index:999;
+}
+nav a{
+    display: flex;
+    float:right;
+    background-color: #312c24;
+    padding:0.5vw 2vw;
+    border: solid 1px #66625c;
+    margin: 0 4px;
+    text-decoration: none;
+}
+/*Home Page*/
+#homebody{
+    background-image: url(Images/hero-image.jpg);
+    background-size:100%;
+    background-position: 10% 10%;
+}
+#workwithnovabutton{
+    position:relative;
+    padding:1vw 4vw;
+    margin:15vw 0vw 0vw 3vw;
+    color: #ffffff;
+    border-radius: 0px;
+}
+#workwithnovabutton b{
+    color:#1b1f24;
+    font-size: x-large;
+}
+#Homeparagraph{
+    width:30vw;
+    margin-left:3vw;
+}
+#DesignsbyNOVA{
+    font-size: 4vw;
+    margin-left:3vw;
+}
+q{
+    margin-left:3vw;
+}
+/*Portfolio Page*/
+#gallery img{
+    width:100%;
+    height:15vw;
+    position:relative;
+    box-sizing:border-box;
+    object-fit:cover;
+}
+#gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top:6vw;
+    width:100%;
+    border-collapse: collapse;
+}
+/*#gallery img{
+    width:100%;
+    padding:0px;
+    position: relative;
+    box-sizing:border-box;
+    object-fit:cover;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width:90vw;
+    justify-items: center;
+    align-items:center;
+    margin:6vw 0vw 0vw 6vw;
+    column-gap: 0px;
+    row-gap:0px;
+    border-style: solid;
+    border-collapse: collapse;
+    object-fit: cover;
+}*/
+@media screen and (max-width:1200px){
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+        width:90vw;
+    }
+}
+@media screen and (max-width:800px){
+    #gallery{
+        grid-template-columns: 1fr;
+        width:90vw;
+    }
+}
+/*Services Page*/
+#workwithnovabuttonservices{
+    position:relative;
+    float:right;
+    padding:1vw 4vw;
+    color: #ffffff;
+    border-radius: 0px;
+    margin-left:70vw;
+    margin-right:5vw;
+}
+#workwithnovabuttonservices b{
+    color:#1b1f24;
+    font-size: x-large;
+}
+#WhatIDoGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left:40vw;
+    margin-top:10vw;
+    margin-right:5vw;
+    border-bottom: solid;
+}
+#WhatIDo{
+    display:absolute;
+    float:left;
+    margin-top:1vw;
+    margin-left:10vw;
+}
+/*About Page*/
+#aboutgrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top:10vw;
+    padding-left:4vw;
+    padding-right:4vw;
+}
+#workwithnovabuttonabout{
+    position:relative;
+    padding:1vw 8vw;
+    color: #ffffff;
+    border-radius: 0px;
+}
+#workwithnovabuttonabout b{
+    color:#1b1f24;
+    font-size: large;
+}
+#WebAppDesigner{
+    font-size: 5vw;
+}
+/*Contact Page*/
+#contactbackground{
+    background-image: url(Images/contact-page-image.jpg);
+    background-size:100%;
+}
+#contactbackground::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    z-index:-1;
+}
+label, input{
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
+/*
+#contactmain{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 100vh, 100vw, 100vh, 100vw;
+}
+#row2{
+    background-color: #1b1f24;
+}
+#row3{
+    background-color: #1b1f24;
+    float:right;
+}
+#row4{
+    float:right;
+}
+#submitbutton{
+
+}*/
+
+#contactmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%;
+}
+#formdiv{
+    background-color: #1b1f24;
+    min-width:70vw;
+    padding:1vw 2vw 1vw 2vw;
+    box-sizing: border-box;
+    font-size: small;
+    overflow:hidden;
+}
+/*@media screen and (max-width:550px){
+    #formdiv{
+        min-width:100vw;
+    }
+}*/
+/*@media screen and (max-width:1000px){
+    #submitbutton{
+        margin-left:10%;
+    }
+}*/
+/*@media screen and (max-width:600px){
+    #contactmain h1{
+        font-size:small;
+    }
+}*/
+#notsubmit{
+    width:100%;
+}
+#submitbutton{
+    padding:1% 6%;
+    margin-left:75%;
+    background-color: #ffffff;
+    border-radius: 0px;
+    color:#1b1f24;
+    font-size: large;
+    font-weight: bold;
+    float:right;
+}
+#socials{
+    /*position:absolute;*/
+    display:flex;
+    float:right;
+    margin-left:83%;
+    font-size: 250%;
+}
+#notsubmit{
+    background-color: #1b1f24;
+    border:solid 2px #4a4d51;
+    font-size: large;
+}

@@ -1,0 +1,1 @@
+This respository contains a bunch of reference images of an example website. The goal of this exercise was to use my HTML and CSS skills to build replica pages from scratch that matched the reference images as closely as possible.
